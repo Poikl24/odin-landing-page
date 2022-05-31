@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+}
+
+.header-container{
+    background-color: #1F2937;
+    flex: auto;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.header-container h3{
+    justify-content: flex-start;
+}
+
+a{
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
+h3{
+    font-size: 24px;
+    color: #F9FAF8;
+}
