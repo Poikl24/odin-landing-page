@@ -4,20 +4,21 @@ body{
 
 .container{
     display: flex;
+    background-color: #1F2937;
 }
 
+
 .header-container{
-    background-color: #1F2937;
     flex: auto;
     justify-content: flex-end;
     align-items: center;
-    gap: 10px;
-    padding: 10px;
+    gap: 30px;
+    padding: 0px 90px;
 
 }
 
 .header-container h3{
-    justify-content: flex-start;
+    margin-right: auto;
 }
 
 a{
@@ -29,3 +30,77 @@ h3{
     font-size: 24px;
     color: #F9FAF8;
 }
+
+
+.content-container,
+.footer-container{
+    padding: 100px 90px 100px;
+    justify-content: space-between;
+}
+
+.content-div{
+    flex-direction: column;
+}
+
+.content-div h1{
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+    margin: 0px;
+}
+
+.content-div p{
+    font-size: 18px;
+    margin-top: 5px;
+    color: #E5E7EB;
+}
+
+button{
+    color: #F9FAF8;
+    background-color: #3882F6;
+    font-weight:bold;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 0px;
+    margin-right: auto;
+    padding: 7px 20px;
+}
+
+.info-container{
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto 60px;
+}
+
+.info-container .info-div{
+    text-align: center;
+    background-color: white;
+    gap: 50px;
+}
+
+.info-container h2{
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1F2937;
+}
+
+/*quote section*/
+.quote-container{
+    background-color: #E5E7EB;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.quote-container p{
+    margin: 0;
+}
+
+.quote-container:nth-child(2){
+    font-weight: extra-bold;
+}
+
+.quote-container .author{
+    margin-left: auto;
+}
+
