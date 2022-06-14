@@ -1,5 +1,7 @@
 body{
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 *{
@@ -40,16 +42,18 @@ h3{
 .footer-container{
     padding: 100px 90px 100px;
     justify-content: center;
-    gap: 70px;
+    gap: 30px;
+    flex: auto;
+    flex-wrap: wrap;
 }
 
 .content-div{
     flex-direction: column;
+    justify-content: center;
 }
 
 .content-div h1{
     font-size: 48px;
-    font-weight: extra-bold;
     color: #F9FAF8;
     margin: 0px;
 }
@@ -64,24 +68,28 @@ h3{
 button{
     color: #F9FAF8;
     background-color: #3882F6;
-    font-weight:bold;
     font-size: 18px;
     border-radius: 10px;
     border: 0px;
     margin-right: auto;
-    padding: 7px 20px;
+    padding: 7px 30px;
     text-align: center;;
 }
 
 .content-container img{
     width: auto;
-    max-height: 300px;
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
+    max-width: 600px;
+    height: auto;
+    width: 100%;
 }
 
+
+#bold, 
+.info-container h2, 
+.content-div h1, 
+#author{
+    font-weight: bold;
+}
 
 
 
@@ -92,19 +100,19 @@ button{
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    flex: 1 1 auto;
 }
 
-.info-container .info-div{
+.info-div{
     text-align: center;
     background-color: white;
     gap: 50px;
     margin-bottom: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .info-container h2{
     font-size: 36px;
-    font-weight: extra-bold;
     color: #1F2937;
     margin: 50px;
 }
@@ -119,6 +127,7 @@ button{
     flex-direction: column;
     padding: 50px 100px;
     align-items: center;
+    height: 100px
 }
 
 .quote-container p{
@@ -127,10 +136,10 @@ button{
 
 #quote{
     font-style: italic;
+    font-size: 25px;
 }
 
 #author{
-    font-weight: bold;
     margin-left: 270px;
 }
 
@@ -138,21 +147,45 @@ button{
     background-color: white;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 50px 300px;
 }
 
 .blue-box{
     background-color: #3882F6;
     align-items: center;
+    flex: auto;
+    border-radius: 10px;
+    padding: 25px 100px;
+    gap: 30px;
 }
 
 .blue-left{
     background-color: #3882F6;
     flex-direction: column;
+    border-radius: 10px;
+    color: white;
 }
 
-button.signup-container{
-    border: 10px white;
+.blue-left p{
+    margin: 0;
+}
+.blue-left #bold{
+    font-size: 20px
 }
 
+.blue-box button{
+    border: 3px solid white;
+    margin-left: auto;
+    font-weight: 600;
+    margin-right: 0;
+}
+
+.footer-container{
+    max-height: 200px;
+    padding: 20px;
+}
+
+.footer-container p{
+    color: white;
+}
 
